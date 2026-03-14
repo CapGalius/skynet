@@ -142,19 +142,38 @@ class MatrixAI:
         print()
     
     def list_profiles(self):
-        """List available profiles"""
+        """List available profiles with selection"""
         print(f"\n{Colors.MATRIX_GREEN}{Colors.BOLD}╔═══ PROFILES ═══╗{Colors.RESET}\n")
         
         if not self.profiles:
             print(f"{Colors.RED}[!] No profiles configured.{Colors.RESET}\n")
             return
         
-        for i, (profile_name, model_names) in enumerate(self.profiles.items(), 1):
+        profiles_list = list(self.profiles.items())
+        
+        for i, (profile_name, model_names) in enumerate(profiles_list, 1):
             model_list = ', '.join(model_names)
             print(f"{Colors.CYAN}[{i}]{Colors.RESET} {Colors.BRIGHT_GREEN}{profile_name.upper()}{Colors.RESET}")
             print(f"    {Colors.DIM}└─ {model_list}{Colors.RESET}")
         
-        print()
+        print(f"{Colors.CYAN}[0]{Colors.RESET} {Colors.BRIGHT_GREEN}Back to Menu{Colors.RESET}\n")
+        
+        while True:
+            try:
+                choice = input(f"{Colors.BRIGHT_GREEN}[>]{Colors.RESET} Select profile (number): ")
+                idx = int(choice)
+                
+                if idx == 0:
+                    return
+                elif 1 <= idx <= len(profiles_list):
+                    profile_name, models = profiles_list[idx - 1]
+                    print(f"\n{Colors.BRIGHT_GREEN}[●]{Colors.RESET} Profile selected: {Colors.YELLOW}{profile_name.upper()}{Colors.RESET}")
+                    print(f"{Colors.DIM}Models: {', '.join(models)}{Colors.RESET}\n")
+                    return
+                else:
+                    print(f"{Colors.RED}[!] Invalid selection.{Colors.RESET}")
+            except (ValueError, KeyboardInterrupt):
+                return
     
     def select_model(self) -> str:
         """Interactive model selection"""
@@ -167,19 +186,23 @@ class MatrixAI:
         print(f"\n{Colors.MATRIX_GREEN}{Colors.BOLD}╔═══ SELECT MODEL ═══╗{Colors.RESET}\n")
         
         for i, model in enumerate(models, 1):
-            desc = self.descriptions.get(model, "")
-            desc_str = f" - {Colors.DIM}{desc}{Colors.RESET}" if desc else ""
-            print(f"{Colors.CYAN}[{i}]{Colors.RESET} {Colors.YELLOW}{model}{Colors.RESET}{desc_str}")
+            desc = self.descriptions.get(model, "Sem descrição disponível")
+            print(f"{Colors.CYAN}[{i}]{Colors.RESET} {Colors.YELLOW}{model}{Colors.RESET}")
+            print(f"   {Colors.DIM}└─ {desc}{Colors.RESET}")
         
-        print()
+        print(f"{Colors.CYAN}[0]{Colors.RESET} {Colors.BRIGHT_GREEN}Voltar ao Menu{Colors.RESET}\n")
+        
         while True:
             try:
-                choice = input(f"{Colors.BRIGHT_GREEN}[>]{Colors.RESET} Select model (number): ")
-                idx = int(choice) - 1
-                if 0 <= idx < len(models):
-                    return models[idx]
+                choice = input(f"{Colors.BRIGHT_GREEN}[>]{Colors.RESET} Selecione o modelo (número): ")
+                idx = int(choice)
+                
+                if idx == 0:
+                    return ""
+                elif 1 <= idx <= len(models):
+                    return models[idx - 1]
                 else:
-                    print(f"{Colors.RED}[!] Invalid selection.{Colors.RESET}")
+                    print(f"{Colors.RED}[!] Seleção inválida.{Colors.RESET}")
             except (ValueError, KeyboardInterrupt):
                 return ""
     
@@ -284,8 +307,6 @@ class MatrixAI:
             self.print_menu_item(3, "Run Model (Interactive)")
             self.print_menu_item(4, "System Status")
             self.print_menu_item(5, "GitHub Copilot CLI")
-            self.print_menu_item(6, "Senior Code Reviewer")
-            self.print_menu_item(7, "Clear Screen")
             self.print_menu_item(0, "Exit")
             
             print()
@@ -305,10 +326,6 @@ class MatrixAI:
                 self.show_status()
             elif choice == '5':
                 self.launch_copilot()
-            elif choice == '6':
-                self.launch_senior_reviewer()
-            elif choice == '7':
-                self.print_banner()
             elif choice == '0':
                 print(f"\n{Colors.DARK_GREEN}[●] Exiting Matrix... Goodbye.{Colors.RESET}\n")
                 break
