@@ -1,0 +1,154 @@
+[2026-03-12 16:14:27] START DEEPSEEK (deepseek-coder:6.7b)
+[2026-03-12 16:16:51] END DEEPSEEK (deepseek-coder:6.7b)
+[2026-03-12 16:39:47] START 0 (/home/capgalius/skynet/ia/menu.sh)
+[2026-03-12 16:39:47] END 0 (/home/capgalius/skynet/ia/menu.sh)
+[2026-03-12 16:47:08] START  ($)
+[2026-03-12 16:47:08] END  ($)
+[2026-03-12 21:28:01] Application started
+[2026-03-12 21:29:04] Model started: 
+[92m[1m╔════ SELECT MODEL ════╗[0m
+
+[96m[1][0m [93mcodellama:7b[0m
+[96m[2][0m [93mdeepseek-coder:6.7b[0m
+[96m[3][0m [93mllama3:8b[0m
+[96m[4][0m [93mqwen2:7b[0m
+
+codellama:7b
+[2026-03-12 21:29:04] Model stopped: 
+[92m[1m╔════ SELECT MODEL ════╗[0m
+
+[96m[1][0m [93mcodellama:7b[0m
+[96m[2][0m [93mdeepseek-coder:6.7b[0m
+[96m[3][0m [93mllama3:8b[0m
+[96m[4][0m [93mqwen2:7b[0m
+
+codellama:7b
+[2026-03-12 21:29:21] Model started: 
+[92m[1m╔════ SELECT MODEL ════╗[0m
+
+[96m[1][0m [93mcodellama:7b[0m
+[96m[2][0m [93mdeepseek-coder:6.7b[0m
+[96m[3][0m [93mllama3:8b[0m
+[96m[4][0m [93mqwen2:7b[0m
+
+deepseek-coder:6.7b
+[2026-03-12 21:29:21] Model stopped: 
+[92m[1m╔════ SELECT MODEL ════╗[0m
+
+[96m[1][0m [93mcodellama:7b[0m
+[96m[2][0m [93mdeepseek-coder:6.7b[0m
+[96m[3][0m [93mllama3:8b[0m
+[96m[4][0m [93mqwen2:7b[0m
+
+deepseek-coder:6.7b
+[2026-03-12 21:29:40] Copilot CLI launched
+[2026-03-12 21:33:47] Copilot CLI closed
+[2026-03-12 21:33:55] Application closed
+[2026-03-12 21:33:58] Application started
+[2026-03-12 21:34:15] Model started: 
+[92m[1m╔════ SELECT MODEL ════╗[0m
+
+[96m[1][0m [93mcodellama:7b[0m
+[96m[2][0m [93mdeepseek-coder:6.7b[0m
+[96m[3][0m [93mllama3:8b[0m
+[96m[4][0m [93mqwen2:7b[0m
+
+codellama:7b
+[2026-03-12 21:34:15] Model stopped: 
+[92m[1m╔════ SELECT MODEL ════╗[0m
+
+[96m[1][0m [93mcodellama:7b[0m
+[96m[2][0m [93mdeepseek-coder:6.7b[0m
+[96m[3][0m [93mllama3:8b[0m
+[96m[4][0m [93mqwen2:7b[0m
+
+codellama:7b
+[2026-03-12 21:34:31] Application closed
+[2026-03-12 21:35:50] Application started
+[2026-03-12 21:35:50] Application closed
+[2026-03-12 21:36:06] Application started
+[2026-03-12 21:36:06] Model started: 
+[92m[1m╔════ SELECT MODEL ════╗[0m
+
+[96m[1][0m [93mcodellama:7b[0m
+[96m[2][0m [93mdeepseek-coder:6.7b[0m
+[96m[3][0m [93mllama3:8b[0m
+[96m[4][0m [93mqwen2:7b[0m
+
+codellama:7b
+[2026-03-12 21:36:09] Model stopped: 
+[92m[1m╔════ SELECT MODEL ════╗[0m
+
+[96m[1][0m [93mcodellama:7b[0m
+[96m[2][0m [93mdeepseek-coder:6.7b[0m
+[96m[3][0m [93mllama3:8b[0m
+[96m[4][0m [93mqwen2:7b[0m
+
+codellama:7b
+[2026-03-12 21:36:45] Application started
+[2026-03-12 21:36:45] Model started: 
+[92m[1m╔════ SELECT MODEL ════╗[0m
+
+[96m[1][0m [93mcodellama:7b[0m
+[96m[2][0m [93mdeepseek-coder:6.7b[0m
+[96m[3][0m [93mllama3:8b[0m
+[96m[4][0m [93mqwen2:7b[0m
+
+codellama:7b
+[2026-03-12 21:36:45] Model stopped: 
+[92m[1m╔════ SELECT MODEL ════╗[0m
+
+[96m[1][0m [93mcodellama:7b[0m
+[96m[2][0m [93mdeepseek-coder:6.7b[0m
+[96m[3][0m [93mllama3:8b[0m
+[96m[4][0m [93mqwen2:7b[0m
+
+codellama:7b
+[2026-03-12 21:38:05] Application started
+[2026-03-12 21:38:07] Model started: 
+[92m[1m╔════ SELECT MODEL ════╗[0m
+
+[96m[1][0m [93mcodellama:7b[0m
+[96m[2][0m [93mdeepseek-coder:6.7b[0m
+[96m[3][0m [93mllama3:8b[0m
+[96m[4][0m [93mqwen2:7b[0m
+
+codellama:7b
+[2026-03-12 21:38:12] Model stopped: 
+[92m[1m╔════ SELECT MODEL ════╗[0m
+
+[96m[1][0m [93mcodellama:7b[0m
+[96m[2][0m [93mdeepseek-coder:6.7b[0m
+[96m[3][0m [93mllama3:8b[0m
+[96m[4][0m [93mqwen2:7b[0m
+
+codellama:7b
+[2026-03-12 21:39:04] Application started
+[2026-03-12 21:39:04] Model started: 
+[92m[1m╔════ SELECT MODEL ════╗[0m
+
+[96m[1][0m [93mcodellama:7b[0m
+[96m[2][0m [93mdeepseek-coder:6.7b[0m
+[96m[3][0m [93mllama3:8b[0m
+[96m[4][0m [93mqwen2:7b[0m
+
+codellama:7b
+[2026-03-12 21:39:04] Model stopped: 
+[92m[1m╔════ SELECT MODEL ════╗[0m
+
+[96m[1][0m [93mcodellama:7b[0m
+[96m[2][0m [93mdeepseek-coder:6.7b[0m
+[96m[3][0m [93mllama3:8b[0m
+[96m[4][0m [93mqwen2:7b[0m
+
+codellama:7b
+[2026-03-12 21:42:40] Application started
+[2026-03-12 21:42:40] Model started: codellama:7b
+[2026-03-12 21:42:59] Model stopped: codellama:7b
+[2026-03-12 21:43:06] Application started
+[2026-03-12 21:43:06] Model started: codellama:7b
+[2026-03-12 21:43:07] Model stopped: codellama:7b
+[2026-03-12 21:44:21] Application started
+[2026-03-12 21:44:28] Model started: ${BRIGHT_GREEN}[>]${RESET} Select model (number): deepseek-coder:6.7b
+[2026-03-12 21:44:28] Model stopped: ${BRIGHT_GREEN}[>]${RESET} Select model (number): deepseek-coder:6.7b
+[2026-03-12 21:46:04] Application closed

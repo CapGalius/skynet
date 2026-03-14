@@ -1,0 +1,31 @@
+# /home/capgalius/skynet/ia/config
+# Modelos (variáveis shell: NOME="modelo:tag")
+CODELLAMA="codellama:7b"
+DEEPSEEK="deepseek-coder:6.7b"
+LLAMA8B="llama3:8b"
+QWEN="qwen2:7b"
+# adicione mais modelos aqui, por exemplo:
+# GEMMA="gemma:7b"
+
+# Comando base do Ollama (GPU ativada por padrão)
+OLLAMA_CMD="OLLAMA_GPU=1 ollama run"
+
+# Script para seleção/execução interativa de modelos
+RUN_MODEL_SCRIPT="/home/capgalius/skynet/run_model.sh"
+
+# Perfis (lista de nomes de variáveis definidas acima)
+PROFILE_programming="DEEPSEEK CODELLAMA QWEN"
+PROFILE_study="LLAMA8B QWEN"
+PROFILE_conversation="LLAMA8B QWEN"
+
+# Comportamento
+DEFAULT_PROFILE="programming"
+OLLAMA_TIMEOUT=5
+LOGFILE="/home/capgalius/skynet/ia/sessions.log"
+
+# Descrições curtas dos modelos (formato: modelo=descrição)
+# Edite ou adicione linhas conforme necessário.
+MODEL_DESCRIPTIONS=$'codellama:7b=programação\n\
+deepseek-coder:6.7b=programação assistida\n\
+llama3:8b=conversas\n\
+qwen2:7b=conversação e multiuso'
