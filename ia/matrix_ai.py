@@ -15,19 +15,19 @@ import time
 from datetime import datetime
 from typing import Dict, List
 
-# ANSI Color Codes - Matrix Style
+# ANSI Color Codes - Phosphor Green Monitor (Retro 80s)
 class Colors:
-    MATRIX_GREEN = '\033[92m'
-    DARK_GREEN = '\033[32m'
-    BRIGHT_GREEN = '\033[1;92m'
-    CYAN = '\033[96m'
-    YELLOW = '\033[93m'
-    RED = '\033[91m'
-    WHITE = '\033[97m'
-    MAGENTA = '\033[95m'
+    MATRIX_GREEN = '\033[1;32m'     # Bright green (monitor glow)
+    DARK_GREEN = '\033[2;32m'       # Dim green (phosphor dark)
+    BRIGHT_GREEN = '\033[1;32m'     # Bright green (same as MATRIX_GREEN)
+    CYAN = '\033[1;32m'             # Green for highlights
+    YELLOW = '\033[1;32m'           # Green for text
+    RED = '\033[1;32m'              # Green even for "errors"
+    WHITE = '\033[1;32m'            # Green for white
+    MAGENTA = '\033[1;32m'          # Green for all accents
     RESET = '\033[0m'
-    DIM = '\033[2m'
-    BOLD = '\033[1m'
+    DIM = '\033[2;32m'              # Dim green
+    BOLD = '\033[1;32m'             # Bold green
 
 class MatrixAI:
     def __init__(self):
@@ -112,7 +112,7 @@ class MatrixAI:
 ║          ██║ ╚═╝ ██║██║  ██║   ██║   ██║  ██║██║██╔╝ ██╗      ║
 ║          ╚═╝     ╚═╝╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝╚═╝╚═╝  ╚═╝      ║
 ║                                                               ║
-║             🔰 OFFLINE AI CONSOLE - EDITION 80s 🔰              ║
+║             ✨ OFFLINE AI CONSOLE - EDITION 80s ✨            ║
 ║                 [>] Ready to enter the Matrix                 ║
 ║                                                               ║
 ╚═══════════════════════════════════════════════════════════════╝
